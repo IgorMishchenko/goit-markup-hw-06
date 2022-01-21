@@ -1,0 +1,352 @@
+
+/*--------------------ROOT--------------------*/
+:root{
+    --main-text-blue-color:  #347cdb;
+    --main-text-black-color: #212121;
+    --main-text-gray-color:  #757575;
+    --main-text-white-color:  #ffffff;
+   
+    --master-button-color: #347cdb;
+    --slave-button-color: #757575;
+    
+}
+
+/*--------------------HEADER--------------------*/
+.container {
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid #2196F3;
+}
+
+
+
+.header-container {
+    width: 1570px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    outline: 2px solid #757575;
+
+}
+
+/*Header LoGo*/
+.header-logo-item {
+    padding-left: 145px;
+}
+
+
+.header-logo-web {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.header-logo-studio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    text-decoration: none;
+    color: #212121;
+}
+
+
+
+/*Header Navigation*/
+.header-nav-list {
+    padding-left: 145px;
+    display: flex;
+}
+.header-nav-item + .header-nav-item{
+    margin-left: 40px;
+}
+
+
+.header-nav-link-active {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+
+.header-nav-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+}
+
+
+/*Header Contact*/
+.header-contact-list{
+    padding-left: 600px;
+    display: flex;
+}
+
+.header-contact-item + .header-contact-item{
+    margin-left: 40px;
+}
+
+.header-contact-link-tel{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+
+}
+
+.header-contact-link-mail{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    
+}
+
+
+.header-contact-link-mail:hover {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-blue-color);
+}
+
+.header-contact-item {
+    margin-left: auto;
+}
+
+/*----------------->BODY<----------------------*/
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+body {
+    font-family: "Roboto", "sans-serif";
+
+}
+
+ul {
+	
+    list-style: none; /*Disable list for "ul"*/
+}   
+
+
+/*Project*/
+
+.projects-container {
+    width: 1170px;
+    height: 1360px;
+    margin-top: 174px;
+    margin-left: 215px;
+     outline: 2px solid #2196F3;; 
+}
+
+.projects-list{
+    padding-top: 32px;
+    display: flex;
+    margin-left: -30px;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+
+.projects-item{
+    width: calc(100% / 3 - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.projects-text-h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.projects-text-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+/*Button.*/
+.button-main{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.button-main:hover, .button-main:focus{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;   
+}
+
+.button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button:hover, button:focus {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.button-list{
+    width: 1170px;
+    height: 50px;
+    display: flex;
+    margin-left: 300px;
+   
+}
+.button-item{
+    margin-left: 5px;
+}
+
+
+/*----------------->FOOTER<----------------------*/
+.footer-logo-web {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.footer-logo-studio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+
+.footer-text-address {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-text-mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer-text-tel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer-container{
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid #2196F3;
+    background: #2F303A;
+}
