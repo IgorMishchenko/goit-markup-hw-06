@@ -24,7 +24,7 @@
 .header-logo-container {
     align-items: center;
     display: flex;
-    padding-left: 215px;
+    padding-left: 15px;
     
 }
 
@@ -173,13 +173,11 @@ ul {
 }
 
 /*Button.*/
-.hero-container{
-    width: 1200px;
-    height: 600;
-    background: #757575;
-}
-/*Button.*/
+
 .button{
+    width: 200px;
+    height: 50px;
+    padding-top: 200pxs;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -194,11 +192,18 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     position: absolute;
-width: 136px;
-height: 30px;
+
 left: calc(50% - 136px/2 + 15px);
 top: 436px;
 margin-bottom: 60px;
+}
+
+/**/
+
+.hero-container{
+    width: 117Ы0px;
+    height: 600;
+    background: #757575;
 }
 
 .hero-title {
@@ -210,14 +215,20 @@ margin-bottom: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
-    color: #212121;
+    color: #ffffff;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-left: 250px;
+    padding-bottom: 300px;
+
 }
 
 /*Service*/
 
 .sevices-list {
+    padding-top: 94px;
+    padding-left: 80px;
+    padding-bottom: 127px;
+
     display: flex;
 }
 
@@ -237,7 +248,7 @@ margin-bottom: 60px;
     color: #212121;
 
     margin-top: 94px;
-    text-align: center
+  
 }
 
 .services-text{
@@ -260,9 +271,10 @@ margin-bottom: 60px;
 
 .what-we-do-list{
     display: flex;
+    margin-left: -20px;
 }
 .what-we-do-item{
-    margin-left: -30px;
+    margin-left: -20px;
 }
 .what-we-do-item + .what-we-do-item{
     margin-left: 30px;
@@ -283,7 +295,14 @@ margin-bottom: 60px;
 .our-team-container{
     width: 1200px;
     height: 648;
+    margin-left: -15px;
     background:  #F5F4FA;
+}
+
+.our-team-item-container {
+    display: flex;
+    width: calc(100% / 4 - 30px);
+    margin-left: 20px;
 }
 
 .our-team-list{
@@ -298,6 +317,8 @@ margin-bottom: 60px;
 }
 
 .our-team-title{
+    padding-top: 94px;
+    margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -330,15 +351,15 @@ margin-bottom: 60px;
     letter-spacing: 0.03em;
     color: #757575;
     margin-top: 10px;
-    margin-bottom: 125px;
+    margin-bottom: 65px;
     text-align: center;
 }
 
 
 /*----------------->FOOTER<----------------------*/
-.footer-container{
+.footer-container {
     width: 1200px;
-    height: 252px;
+    height: 152px;
     background: #212121;
     
 }
