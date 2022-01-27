@@ -11,23 +11,12 @@
 }
 
 /*--------------------HEADER--------------------*/
-
-.header-container{
-    width: 1170px;
-    height: 50px;
+.container-header{
     display: flex;
-    list-style: none;
-    margin: auto;
-}
-/***Logo***/
- 
-.header-logo-container {
     align-items: center;
-    display: flex;
-    padding-left: 15px;
-    
-}
 
+}
+/*Logo*/
 .header-logo-web {
     font-family: Raleway;
     font-style: normal;
@@ -38,7 +27,7 @@
     list-style: none;
     text-decoration: none;
     color: #2196F3;
-    
+     
 }
 
 .header-logo-studio {
@@ -51,27 +40,19 @@
     list-style: none;
     text-decoration: none;
     color: #212121;
+  
 }
+/*Navigation*/
 
-/***Navigation***/
-.header-nav-container{
-
+.header-nav-list{
     display: flex;
-    align-items: center;
+ padding-left: 150px;
 }
 
-.header-nav-list {
-  display: flex;
-}
-
-.header-nav-container {
-    padding-left: 125px;
-}
 
 .header-nav-item + .header-nav-item {
-    margin-left: 40px;
+margin-left: 30px;
 }
-
 
 .header-nav-link-active {
     font-family: Roboto;
@@ -81,10 +62,9 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    list-style: none;
     color: #2196F3;
+  
 }
-
 
 .header-nav-link{
     font-family: Roboto;
@@ -93,28 +73,22 @@
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-    list-style: none;
     letter-spacing: 0.02em;
 
     color: #212121;
+  }
 
-}
 
-/***Contact***/
-.header-contact-container {
+
+/*Contact*/
+.header-contact-list{
     display: flex;
-    align-items: center;
     margin-left: auto;
 }
 
-.header-contact-list {
-    display: flex;
-}
-
 .header-contact-item + .header-contact-item{
-    margin-left: 40px;
+    margin-left: 30px;
 }
-
 
 .header-contact-link-tel{
     font-family: Roboto;
@@ -152,32 +126,36 @@ color: #757575;
 }
 
 /*----------------->BODY<----------------------*/
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 
 body {
     font-family: "Roboto", "sans-serif";
 
 }
 
-/*Disable list for "ul"*/
-ul {
-    list-style: none;
-}
-
-/*---->container*/
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
     outline: 2px solid #2196F3;
+    margin: 0px;
+}
+
+/*Disable list for "ul"*/
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    display: block;
 }
 
 /*Button.*/
-
 .button{
-    width: 200px;
-    height: 50px;
-    padding-top: 200pxs;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -191,19 +169,22 @@ ul {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    position: absolute;
-
-left: calc(50% - 136px/2 + 15px);
+     width: 136px;
+height: 30px;
+left:200px;
 top: 436px;
-margin-bottom: 60px;
+margin-top: 50px;
+margin-left: 450px;
+   
 }
 
-/**/
+/*hero*/
 
-.hero-container{
-    width: 117Ы0px;
-    height: 600;
-    background: #757575;
+
+.hero{
+    width: 1200px;
+    height: 600px;
+    background: #2F303A;
 }
 
 .hero-title {
@@ -214,29 +195,25 @@ margin-bottom: 60px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
     color: #ffffff;
     padding-top: 200px;
-    padding-left: 250px;
-    padding-bottom: 300px;
-
+    padding-left: 215px;
 }
 
 /*Service*/
-
-.sevices-list {
-    padding-top: 94px;
-    padding-left: 80px;
-    padding-bottom: 127px;
-
+.sevices-list{
     display: flex;
 }
 
-.services-item + .services-item{
-    margin-left: 20px;
+.services-item{
+    margin-top: 140px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-
+.services-item + .services-item{
+    margin-left: 40px;
+}
 .service-title {
     font-family: Roboto;
     font-style: normal;
@@ -246,9 +223,8 @@ margin-bottom: 60px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-
-    margin-top: 94px;
-  
+    padding-top: 94px;
+ 
 }
 
 .services-text{
@@ -262,23 +238,9 @@ margin-bottom: 60px;
     letter-spacing: 0.03em;
 
     color: #757575;
-    margin-top: 10px;
 }
 
 /*What we do*/
-
-
-
-.what-we-do-list{
-    display: flex;
-    margin-left: -20px;
-}
-.what-we-do-item{
-    margin-left: -20px;
-}
-.what-we-do-item + .what-we-do-item{
-    margin-left: 30px;
-}
 .what-we-do-title {
     font-family: Roboto;
     font-style: normal;
@@ -287,38 +249,30 @@ margin-bottom: 60px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 92px;
-    text-align: center
+
+    padding-top: 94px;
+    padding-left: 400px;
+    padding-bottom: 50px;
+
+}
+
+.what-we-do-list {
+    display: flex;
+}
+
+.what-we-do-item + .what-we-do-item{
+    margin-left: 27px;
 }
 
 /*our-team*/
-.our-team-container{
+
+.our-team{
     width: 1200px;
-    height: 648;
-    margin-left: -15px;
-    background:  #F5F4FA;
+    height: 570px;
+    background: #F5F4FA;
+
 }
-
-.our-team-item-container {
-    display: flex;
-    width: calc(100% / 4 - 30px);
-    margin-left: 20px;
-}
-
-.our-team-list{
-    margin-top: 94px;
-    display: flex;
-    margin-left: -30px;
-}
-
-
-.our-team-item +.our-team-item{
-    margin-left: 30px;
-}
-
 .our-team-title{
-    padding-top: 94px;
-    margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -326,10 +280,20 @@ margin-bottom: 60px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #212121;
-    text-align: center;
+    padding-top: 94px;
+    padding-left: 500px;
+    padding-bottom: 50px;
+
 
 }
 
+.our-team-list {
+    display: flex;
+    }
+
+.our-team-item +.our-team-item{
+    margin-left: 30px;
+}
 .our-team-text-h3 {
     font-family: Roboto;
     font-style: normal;
@@ -338,7 +302,10 @@ margin-bottom: 60px;
     line-height: 1.18; 
     letter-spacing: 0.03em;
     color: #212121;
+
+    padding-top: 30px;
     text-align: center;
+    
 }
 
 
@@ -350,33 +317,20 @@ margin-bottom: 60px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-top: 10px;
-    margin-bottom: 65px;
+
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+
+}
+
+.our-team-item-cont {
+    outline: 2px solid #2196F3;
 }
 
 
 /*----------------->FOOTER<----------------------*/
-.footer-container {
-    width: 1200px;
-    height: 152px;
-    background: #212121;
-    
-}
-
-.footer-logo-container{
-    margin-left: 215px;
-    padding-top: 100px;
-}
-
-
-.footer-address-list{
-margin-left: -45px;
-}
-.footer-address-item {
-    margin-top: 9px;
-}
-
 .footer-logo-web {
     font-family: Raleway;
     font-style: normal;
@@ -388,7 +342,8 @@ margin-left: -45px;
     letter-spacing: 0.03em;
     color: #2196F3;
 
-}
+ 
+ }
 
 .footer-logo-studio {
     font-family: Raleway;
@@ -412,6 +367,8 @@ margin-left: -45px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
+
+   
 }
 
 .footer-text-mail {
@@ -423,9 +380,9 @@ margin-left: -45px;
     /* identical to box height, or 171% */
 
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+
 }
 
 .footer-text-tel {
@@ -438,4 +395,21 @@ margin-left: -45px;
 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+   
+}
+
+.container-foter{
+    width: 1200px;
+    height: 200px;
+    background: #2F303A;
+}
+
+.container-nav-foter{
+    padding-top: 20px;
+      
+}
+.footer-log{
+    padding-top: 60px;
+    padding-left: 50px;
+    margin: 0;
 }

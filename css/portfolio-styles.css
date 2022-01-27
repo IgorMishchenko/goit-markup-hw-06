@@ -11,28 +11,12 @@
 }
 
 /*--------------------HEADER--------------------*/
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    outline: 2px solid #2196F3;
-}
-.header-container{
-    width: 1170px;
-    height: 50px;
+.container-header{
     display: flex;
-    list-style: none;
-    margin: auto;
-    outline: 2px solid #2196F3;
-}
-/***Logo***/
- 
-.header-logo-container {
     align-items: center;
-    display: flex;
-    padding-left: 215px;
-    
-}
 
+}
+/*Logo*/
 .header-logo-web {
     font-family: Raleway;
     font-style: normal;
@@ -43,7 +27,7 @@
     list-style: none;
     text-decoration: none;
     color: #2196F3;
-    
+     
 }
 
 .header-logo-studio {
@@ -56,27 +40,19 @@
     list-style: none;
     text-decoration: none;
     color: #212121;
+  
 }
+/*Navigation*/
 
-/***Navigation***/
-.header-nav-container{
-
+.header-nav-list{
     display: flex;
-    align-items: center;
+ padding-left: 150px;
 }
 
-.header-nav-list {
-  display: flex;
-}
-
-.header-nav-container {
-    padding-left: 125px;
-}
 
 .header-nav-item + .header-nav-item {
-    margin-left: 40px;
+margin-left: 30px;
 }
-
 
 .header-nav-link-active {
     font-family: Roboto;
@@ -86,10 +62,9 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    list-style: none;
     color: #2196F3;
+  
 }
-
 
 .header-nav-link{
     font-family: Roboto;
@@ -98,28 +73,22 @@
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-    list-style: none;
     letter-spacing: 0.02em;
 
     color: #212121;
+  }
 
-}
 
-/***Contact***/
-.header-contact-container {
+
+/*Contact*/
+.header-contact-list{
     display: flex;
-    align-items: center;
     margin-left: auto;
 }
 
-.header-contact-list {
-    display: flex;
-}
-
 .header-contact-item + .header-contact-item{
-    margin-left: 40px;
+    margin-left: 30px;
 }
-
 
 .header-contact-link-tel{
     font-family: Roboto;
@@ -156,64 +125,34 @@ color: #757575;
     color: var(--main-text-blue-color);
 }
 
-
-/*----------------->HEADER<----------------------*/
-
-
 /*----------------->BODY<----------------------*/
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 
 body {
     font-family: "Roboto", "sans-serif";
 
 }
 
-/*Disable list for "ul"*/
-ul {
-    list-style: none;
-}
-/*Project*/
-
-.projects-container {
+.container {
     width: 1200px;
-    height: 1360px;
-    outline: 2px solid #2196F3;; 
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid #2196F3;
+    margin: 0px;
 }
 
-.projects-list{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-   }
-
-.projects-item{
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-
+/*Disable list for "ul"
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
- 
-
-.projects-text-h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2.00;
-    letter-spacing: 0.06em;
-    color: #212121;
+*/
+.img{
+    display: block;
 }
-
-.projects-text-p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
 
 /*Button.*/
 .button-main{
@@ -228,6 +167,7 @@ ul {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    width: 120px;
 }
 
 .button-main:hover, .button-main:focus{
@@ -254,6 +194,7 @@ ul {
     color: #212121;
     background: #F5F4FA;
     border-radius: 4px;
+    width: 120px;
 }
 
 .button:hover, button:focus {
@@ -270,42 +211,68 @@ ul {
     border-radius: 4px;
 }
 
-.button-list{
-    margin-top: 94px;
-    width: 1170px;
-    height: 50px;
+/*Project*/
+.projects-button-list{
     display: flex;
-    margin-left: 300px;
+    padding-top: 174px;
+    padding-left: 190px;
+    padding-bottom: 55px;
+}
+
+.projects-button-item + .projects-button-item{
+margin-left: 30px;
+}
+
+.our-projects-list{
+    margin-top: 9   0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: -20px;
+}
+
+.our-projects-item{
+    width: calc(100% / 3 -30px);
+    padding-left: 15px;
+}
+
+.our-projects-item + .our-projects-item{
+    margin-left: 10px;
+}
+
+.projects-text-h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: #212121;
+    padding-top: 10px;
+    padding-left: 20px;
+  
+}
+
+.projects-text-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
    
-}
-.button-item{
-    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 
+.projects-text-container{
+    outline: 2px solid #2196F3;
+}
 
 /*----------------->FOOTER<----------------------*/
-.footer-container {
-    width: 1200px;
-    height: 252px;
-    background: #212121;
-    
-}
-
-.footer-logo-container{
-    margin-left: 215px;
-    padding-top: 100px;
-}
-
-
-.footer-address-list{
-margin-left: -45px;
-}
-
-.footer-address-item {
-    margin-top: 9px;
-}
-
 .footer-logo-web {
     font-family: Raleway;
     font-style: normal;
@@ -317,7 +284,8 @@ margin-left: -45px;
     letter-spacing: 0.03em;
     color: #2196F3;
 
-}
+ 
+ }
 
 .footer-logo-studio {
     font-family: Raleway;
@@ -341,6 +309,8 @@ margin-left: -45px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
+
+   
 }
 
 .footer-text-mail {
@@ -352,9 +322,9 @@ margin-left: -45px;
     /* identical to box height, or 171% */
 
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+
 }
 
 .footer-text-tel {
@@ -367,4 +337,21 @@ margin-left: -45px;
 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+   
+}
+
+.container-foter{
+    width: 1200px;
+    height: 200px;
+    background: #2F303A;
+}
+
+.container-nav-foter{
+    padding-top: 20px;
+      
+}
+.footer-log{
+    padding-top: 60px;
+    padding-left: 50px;
+    margin: 0;
 }
