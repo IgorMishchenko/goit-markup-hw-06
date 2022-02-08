@@ -9,11 +9,21 @@
     --slave-button-color: #757575;
     
 }
+ 
 
 /*--------------------HEADER--------------------*/
+
+.header{
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  }
+
+
 .container-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     align-items: center;
+   
 
 }
 /*Logo*/
@@ -27,6 +37,7 @@
     list-style: none;
     text-decoration: none;
     color: #2196F3;
+    transition: color 300ms linear, fill 300ms linear;
      
 }
 
@@ -40,18 +51,24 @@
     list-style: none;
     text-decoration: none;
     color: #212121;
+    transition: color 300ms linear, fill 300ms linear;
   
+}
+
+.header-logo-studio:hover,  .header-logo-studio:focus, .header-logo-web:hover, .header-logo-web:focus{
+    fill:#2196F3; 
+    color:  #2196F3;
 }
 /*Navigation*/
 
 .header-nav-list{
     display: flex;
- padding-left: 150px;
+ margin-left: 93px;
 }
 
 
 .header-nav-item + .header-nav-item {
-margin-left: 30px;
+margin-left: 50px;
 }
 
 .header-nav-link-active {
@@ -63,8 +80,27 @@ margin-left: 30px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #2196F3;
+    transition: color 300ms linear, fill 300ms linear;
   
 }
+
+
+.header-nav-link:hover, .header-nav-link:focus {
+           
+    fill:#2196F3; 
+    color:  #2196F3;
+
+}
+
+.header-nav-link-active:hover, .header-nav-link-active:focus {
+           
+    fill:   #757575;
+    color:  #757575;
+
+}
+
+
+/**Navigation**/
 
 .header-nav-link{
     font-family: Roboto;
@@ -76,21 +112,22 @@ margin-left: 30px;
     letter-spacing: 0.02em;
 
     color: #212121;
+    transition: color 300ms linear, fill 300ms linear;
   }
+  
 
 
-
-/*Contact*/
+  /*Contact*/
 .header-contact-list{
     display: flex;
     margin-left: auto;
 }
 
 .header-contact-item + .header-contact-item{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
-.header-contact-link-tel{
+.header-contact-link{
     font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -99,30 +136,20 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #757575;
+transition: color 300ms linear, fill 300ms linear;
 
 }
 
-.header-contact-link-mail{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    text-decoration: none;
-}
 
+.header-contact-icon{
+    margin-left: 15px;
+   }
 
-.header-contact-link-mail:hover {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--main-text-blue-color);
+.header-contact-link:hover,
+.header-contact-link:focus{
+           
+    fill:#2196F3; 
+    color:  #2196F3;
 }
 
 /*----------------->BODY<----------------------*/
@@ -139,9 +166,9 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid #2196F3;
     margin: 0 auto;
     box-sizing: border-box;
+    
 }
 
 /*Disable list for "ul"****/
@@ -171,69 +198,50 @@ ul, li {
     padding: 6px 22px;
 display: block;
 margin: 0 auto;
+transition: color 300ms linear, background-color 300ms linear;
   
 }
 
-.button-main:hover, .button-main:focus{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    background: #F5F4FA;
-    border-radius: 4px;
-    padding: 6px 22px;
-display: block;
-margin: 0 auto;   
-}
+
 
 .button{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.62;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: #212121;
+    background: #F5F4FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 padding: 6px 22px;
 display: block;
 margin: 0 auto;
-
+transition: color 300ms linear, background-color 300ms linear;
 }
 
+
+.button-main:hover, .button-main:focus{
+    color: #212121;
+    background: #F5F4FA;   
+}
 .button:hover, button:focus {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
     background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    padding: 6px 22px;
-display: block;
-margin: 0 auto;
 }
 
 /*Project*/
 
-
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .projects-button-list{
     display: flex;
-    padding-top: 55px;
-    margin-bottom: 50px;
     justify-content: center;
 
 }
@@ -246,14 +254,24 @@ margin-left: 8px;
 .our-projects-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
     margin-left: -30px;
+    margin-bottom: -30px;
+
 }
 
 .our-projects-item{
     width: calc(100% / 3 - 30px);
-margin-left: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #eeeeee;
+    box-sizing: border-box;
 }
 
+
+.our-projects-item:focus, .our-projects-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 
 .projects-text-h3 {
@@ -282,11 +300,47 @@ margin-left: 30px;
 
 
 .projects-text-container{
-    padding-top: 10px;
-    padding-bottom: 5px;
-    outline: 2px solid #2196F3;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+
+/*    outline: 2px solid #2196F3;*/
 }
+
+.our-projects-item:hover .our-projects-top-text {
+    transform: translateY(0);
+ }
+
+.our-projects-wrap{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.our-projects-top-text {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+letter-spacing: 0.03em;
+color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    background-color: #2196F3;
+    padding: 30px;
+    height: 100%;
+    transform: translateY(100%);
+
+    transition: transform 300ms linear;
+}
+
+
 
 /*----------------->FOOTER<----------------------*/
 .footer-logo-web {
@@ -299,8 +353,6 @@ margin-left: 30px;
     text-decoration: none;
     letter-spacing: 0.03em;
     color: #2196F3;
-
- 
  }
 
 .footer-logo-studio {
@@ -356,13 +408,77 @@ margin-left: 30px;
    
 }
 
-.container-foter{
-padding-top: 60px;
-padding-bottom: 60px;
-    background: #2F303A;
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+        background: #2F303A;
 }
 
 .container-nav-foter{
     padding-top: 20px;
       
+}
+
+/*Social media*/
+.footer-social-media {
+    margin-top: -90px;
+    padding-left: 300px;
+    align-items:baseline;           
+}
+
+.footer-social-media-title{
+
+ 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.footer-social-media-list{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+    display: flex;
+}
+
+
+.footer-social-media-item + .footer-social-media-item{
+    margin-left: 10px;
+}
+
+.footer-social-media-link{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    fill: #FFFFFF;
+    color:  #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: color 300ms linear, fill 300ms linear, outline 300ms linear, background-color 300ms linear;
+  
+}
+
+
+.footer-social-media-link:focus,
+.footer-social-media-link:hover{
+    fill: #FFFFFF;
+    color:  #FFFFFF;
+    outline: 2px solid #FFFFFF;
+    background-color: #2196F3;
 }
