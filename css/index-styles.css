@@ -659,7 +659,7 @@ transition: color 300ms linear, background-color 300ms linear;
 
 /*Social media*/
 .footer-social-media {
-    margin-top: -90px;
+    margin-top: -120px;
     padding-left: 300px;
     align-items:baseline;           
 }
@@ -725,7 +725,7 @@ color: #FFFFFF;
 
 .footer-subscribe {
     margin-top: -80px;
-    margin-left: 630px;
+    margin-left: 590px;
    }
 
 .footer-form-label {
@@ -743,19 +743,21 @@ padding-bottom: 20px;
 }
 
 .footer-form-send{
-    margin-left: 485px;
+    margin-left: 525px;
     margin-top: -85px;
 }
 
 
 .footer-form-input{
-    width: 320px;
+    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background: #2F303A;
+color:#ffffff;
+font-style: 12px;
 
 }
 
@@ -789,6 +791,8 @@ background: #2196F3;
 margin-left: 15px;
 
 padding-right: 40px;
+outline:none;
+border-radius: 4px;
 }
 
 /**ModalWindows**/
@@ -829,6 +833,7 @@ padding-right: 40px;
     top: 10px;
     right: 10px;
     transition: color 300ms linear, fill 300ms linear, outline 300ms linear;
+    fill: #188CE8;
   }
   
   .is-hidden {
@@ -852,32 +857,7 @@ padding-right: 40px;
   /****/
 
  /**Modal button**/ 
-.modal-submit-btn {
- 
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 164px;
-    margin-right: 164px;
-    margin-bottom: 45px;
 
-    background: #188CE8;
- 
-    border-radius: 4px;
-    color:#ffffff;
-    outline:none;
-    
-
-    display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-padding-top: 10px;
-padding-left: 56px;
-padding-right: 56px;
-padding-bottom: 10px;
-
-}
 
 .footer-form-send{
     position: relative;
@@ -920,39 +900,53 @@ padding-bottom: 10px;
 
 
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-/* identical to box height */
-
-letter-spacing: 0.01em;
-
-color: #757575;
-margin-bottom: 10px;
-
-
-
-/*border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-border-radius: 1px;
-
-transition: color 300ms linear, border-color 300ms linear, fill 300ms linear, border 300ms linear;
-*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+    
+    color: #757575;
 }
+
+.modal-label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+.modal-input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+
+ 
 
 .modal-text1 {
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: #757575;
- 
-
-    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
@@ -975,12 +969,11 @@ transition: color 300ms linear, border-color 300ms linear, fill 300ms linear, bo
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.01em;
-    
- 
-    color: rgba(117, 117, 117, 0.5);  
+     color: rgba(117, 117, 117, 0.5);
+      fill: #2196F3;  
 }
 
 
@@ -1024,15 +1017,6 @@ margin-left: 40px;
     transform: translateY(-50%);
     transition: color 300ms linear, fill 300ms linear, border-color 300ms linear;
   }
-  
-
-  
-
-  
-    .modal-check{
-      margin-left: 40px;
-  }
- 
 
 .modal-check-text span{
  
@@ -1047,7 +1031,6 @@ margin-left: 40px;
 .modal-check-t1{
     padding-left: 12px;
     margin-bottom: 20px;
-    
     font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -1073,10 +1056,7 @@ letter-spacing: 0.03em;
 color: #2196F3;
 }
 
-.modal-check-icon {
-    fill: transparent;
-  }
-  
+
   .modal-check:checked + .modal-check-text > span {
 
     border: none;
@@ -1128,8 +1108,110 @@ color: #2196F3;
   }
  
 
-/*
+ 
+
+
+
+  .modal-check-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+    display: flex;
+    align-items: center;
+  }
   
-transition: color 300ms linear, fill 300ms linear, border-color 300ms linear;
-transition: color 300ms linear, border-color 300ms linear, fill 300ms linear, border 300ms linear;  
-  **/
+  
+  .modal-check-text1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #2196F3;
+    display: flex;
+    align-items: center;
+    text-decoration:underline;
+    padding-left: 10px;
+  }
+
+  .modal-check-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-check-icon {
+    fill: transparent;
+  }
+  
+  .modal-check:checked + .modal-check-text > span {
+    background-color: var(--accent-color);
+    border: none;
+  }
+  
+  .modal-check:checked + .modal-check-text svg {
+    fill:#2196F3;
+  }
+  
+  
+
+.modal-submit-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+     
+     
+
+ 
+ 
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 164px;
+        margin-right: 164px;
+        margin-bottom: 45px;
+    
+        background: #188CE8;
+        outline:none;
+        border-radius: 4px;
+        color:#ffffff;
+         
+        
+    
+        display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 10px;
+    
+    }
+
+
+
+
+
+
+
+
+}
